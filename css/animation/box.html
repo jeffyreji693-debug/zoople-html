@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     .box{
+        width: 60px;
+        height: 60px;
+     }
+
+     .box1{
+        background: #ff0808;
+        animation: moveright 2s ease-in-out infinite alternate;
+     }
+     @keyframes moveright{
+     from{transform: translateX(0);}
+     to{transform: translateX(100px);}
+     }
+
+      .box2{
+        background: #000000;
+        animation: scalebox 1.5s ease-in-out infinite alternate;
+     }
+     @keyframes scalebox{
+     from{transform: scale(0);}
+     to{transform: scale(1.1);}
+     }
+
+     .box3{
+        background: #d0ec00;
+        animation:spin 2s linear infinite ;
+     }
+     @keyframes spin{
+        from{transform: rotate(0deg);}
+        to{transform: rotate(340deg);}
+     }
+
+     .box4{
+        background: #00757b;
+        animation:colorchange 2s ease-in-out infinite alternate ;
+     }
+     @keyframes colorchange{
+        0%{background-color: orange;}
+        40%{background-color: yellow;}
+        50%{background-color: red;}
+        100%{background-color: purple;}
+     }
+
+     .box5{
+        background: #ff0073;
+        animation:bounce 1s ease-in-out infinite ;
+     }
+     @keyframes bounce{
+        0%{transform: translateY(0);}
+        50%{transform: translateY(-70px);}
+        100%{transform: translateY(-100px);}
+     }
+        
+    </style>
+</head>
+<body>
+    
+    <h2>Multiple box with different Animation</h2>
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.main{
+    background: linear-gradient(90deg, blue,violet);
+    width: 100vw;
+    height: 100vh;
+    padding: 45px;
+}
+.sub{
+    width: 651px;
+    height: 517px;
+    background-color: beige;
+    text-align: center;
+    padding: 40px;
+    margin-left: 400px;
+}
+span{
+    color: blue;
+    font-weight: bold;
+}
+.box{
+    width: 30vw;
+    height: 8vh;
+    background: white;
+    text-align: center;
+}
+*{
+    margin: 0;
+}

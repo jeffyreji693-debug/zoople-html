@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+     .card-container{
+        /* crates a 3d world */
+        perspective: 4000px;
+     }
+
+     /* card */
+     .card{
+        width: 250px;
+        height: 300px;
+        position: relative;
+
+        /* keeps front and back in that 3d world */
+        transform-style: preserve-3d;
+        transition: transform 0.8s;
+        cursor: pointer;
+     }
+
+     /* flip effect */
+     .card-container:hover .card{
+        transform: rotateY(180deg);
+     }
+
+     /* front and back */
+     .card-front,
+     .card-back{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        backface-visibility: hidden;
+        box-shadow: 0 10px 25px ;
+     }
+     .card-front img{
+        width: 100%;
+        height: 100%;
+        object-fit:cover ;
+        border-radius: 10px;
+     }
+     .card-back{
+        background: linear-gradient(white, blue);
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+}
+/* .card-back h2,
+.card-back h3{
+    margin: 0;
+} */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div class="card-container">
+        <div class="card">
+            <div class="card-front">
+                <img src="https://img.magnific.com/free-vector/user-circles-set_78370-4704.jpg?semt=ais_hybrid&w=740&q=80" alt="" width="100px">
+            </div>
+            <div class="card-back">
+            <h2>Name - suresh</h2>
+            <P>SOFTWARE DEVELOPER</P>
+            <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

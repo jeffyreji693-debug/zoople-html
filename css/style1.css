@@ -1,0 +1,35 @@
+.maindiv{
+    width: 100%;
+    background: #d83030;
+    height: 50vh;
+    background-image: url(https://lumiere-a.akamaihd.net/v1/images/pp_cars_homepage_herobanner_mobile_v5_e05d00f1_a743a7cd.jpeg?region=0%2C0%2C640%2C480);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: right;
+    box-shadow: 2px 3px 8px ;
+}
+.A{
+     width: 50%;
+    height: 30vh;
+    color: aliceblue;
+    /* background: linear-gradient(90deg,green,black); */
+    background: radial-gradient(circle,blue,black);
+   box-shadow: 2px 4px 3px rgb(67, 218, 25);
+}
+.b{
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    color: rgb(61, 61, 72);
+    /* font-size: 20px;
+    font-weight:bolder;
+    font-style: italic; */
+    font-variant: small-caps;
+    font: italic bolder 30px 'Lucida Grande', 'Lucida Sans Unicode';
+
+    text-decoration: underline;
+    text-align: right;
+    text-transform: capitalize;
+    text-shadow: 2px 4px 8px blue;
+    text-decoration-color: blue;
+    text-decoration-style: double;
+
+}
