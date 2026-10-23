@@ -8,7 +8,13 @@
     <style>
         .grid{
             display: grid;
-            grid-template-columns: 200px 100px ;
+            /* grid-template-columns: 200px 100px 300px ;
+            grid-template-rows: 200px 200px; */
+
+            grid-template-columns: repeat(3,200px);
+            grid-template-rows: repeat(2, 100px);
+            /* gap: 10px; */
+            grid-gap: 34px 56px;
         }
     
         

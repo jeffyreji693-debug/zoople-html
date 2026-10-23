@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            padding: 2%;
+            align-items: center;
+            background-color: #1c1a1a;
+            color: white;
+        }
+        ul{
+            display: flex;
+            gap: 12px;
+            list-style: none;
+            justify-content: center;
+            text-transform: uppercase;
+        }
+        .main{
+            display: flex;
+            margin-top: 100px;
+        }
+        .left{
+            margin-left: 10%;
+        }
+        .Right{
+            margin-left: 30%;
+            animation: move 2s ease infinite alternate;
+            img{
+                border-radius: 10px;
+            }
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            margin-top: 20px;
+        }
+
+        footer{
+            width: 100%;
+            height: 100px;
+            background: black;
+            
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 150px;
+        }
+
+        @keyframes move{
+            0%,100%{
+         transform: translateY(0);
+            }
+            50%{
+                transform: translateY(-50px);
+            }
+        }
+
+        .Products{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 90px ;
+        }
+        .card{
+            width: 300px;
+            height: 350px;
+            box-shadow: 0px 5px 15px;
+            border-radius: 10px;
+            text-align: center;
+            transition: 1s ease;
+            img{
+                margin: 20px;
+            }
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+
+        button{
+            color: black;
+            background: white;
+            border-radius: 5px;
+            /* border: none; */
+        }
+        button:hover{
+            color: white;
+            background: black;
+            border: 1px solid;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Techstore</h2>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Product</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+   <div class="main">
+    <div class="left">
+        <h2>Smart Watch</h2> <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>Natus exercitationem ea aliquid dolore perferendis enim?</p>
+        <button>BuyNow</button>
+    
+    </div>
+    <div class="Right">
+        <img src="https://www.titan.co.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dwfeed7ba6/images/Titan/Catalog/90189SM01_1.jpg?sw=800&sh=800" alt="" width="300">
+    </div>
+   </div>
+
+
+   <div class="Products">
+
+    <div class="card">
+        <img src="https://www.fastrack.in/dw/image/v2/BKDD_PRD/on/demandware.static/-/Sites-titan-master-catalog/default/dw472776ec/images/Fastrack/Catalog/38184PP02K_1.jpg?sw=600&sh=600" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+
+    <div class="card">
+        <img src="https://m.media-amazon.com/images/I/71XA0QCW5lL.jpg" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+
+    <div class="card">
+        <img src="https://www.titan.co.in/on/demandware.static/-/Sites-titan-master-catalog/default/dwc016efa6/images/Titan/Catalog/90299NP01K_1.jpg" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+
+    <div class="card">
+        <img src="https://goboult.co.in/cdn/shop/files/Res_Artboard6_48e29684-c770-492d-a59c-ac94374c4a59_500x500.webp?v=1784525485" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+
+    <div class="card">
+        <img src="https://www.watchoutwearables.com/cdn/shop/files/The_1st_Kids_Smartwatch_with_Fever_Alert_5.png?v=1748549900" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+
+    <div class="card">
+        <img src="https://cdn.jiostore.online/v2/jmd-asp/jdprod/wrkr/products/pictures/item/free/resize-w:460/noise/494742998/0/FUygaFoV5C-uG7VRx54f-Chrome-Black.jpg" alt="" width="200">
+        <h3>Smart watch</h3>
+        <p>price : ₹3000</p>
+        <Button>Add To Cart</Button>
+        <!-- CTRL+SHIFT+4 RUPPES SYUMBOL -->
+        
+    </div>
+   </div>
+   <footer>&copy;Copyright, Alright reserved</footer>
+</body>
+</html>
