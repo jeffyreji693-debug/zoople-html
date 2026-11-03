@@ -57,4 +57,24 @@ else {
 }
 
 
+// terinary ? left(true); right(false)
+
+let result = (age >=18) ? "adult" : "Minor"
+console.log("result", result);
+
+
+let day = "Monday"
+switch (day) {
+    case "Monday" : console.log("day is monday");
+    break
+     case "Tuesday" : console.log("day is Tuesday");
+    break;
+     case "Wednesday" : console.log("day is Wednesday");
+    break;
+    default:
+     console.log("invalid");
+     }
+
+
+
 
