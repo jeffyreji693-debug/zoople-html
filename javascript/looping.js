@@ -42,3 +42,31 @@ console.log(i*5);
 document.write(i, '*', '5','=', i*5, '<br>')
 }
 
+
+//while (condition). execute
+
+let i=1
+while(i<=10){
+    console.log(i);
+    document.write(i, '<br>')
+    i++
+    
+}
+let j=10
+while(j>=1){
+    console.log(j);
+    document.write(j, '<br>')
+    j--
+}
+
+//exit controlled loop
+let num=1
+do{
+    console.log(num);
+    document.write(num)
+    num++
+    }while(num<=10);
+    
+
+
+
